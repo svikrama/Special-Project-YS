@@ -1,0 +1,6 @@
+import pandas as pd
+df = pd.read_excel (r'C:\Users\svikraman\Desktop\ODP Projects\Special Projects\Related Youth Suicide Studies - Resorted - July2020.xlsx')
+df.head (5)
+df.loc[df['Project Abstract'].str.contains('Suicide')]
+df.head(5)
+df.to_excel("output.xlsx") 
